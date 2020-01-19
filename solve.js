@@ -139,7 +139,7 @@ class USequence {
 			for(let i = 0; i < offsetSeqs.length; i++) {
 				let aSeq = [];
 				for(let j = badRoot+1; j < offsetSeqs[i].length; j++) {
-					if(offsetSeqs[i][j] > i + badRoot + 2) {
+					if(offsetSeqs[i][j] > j-badRoot) {
 						aSeq.push(1);
 					} else {
 						aSeq.push(0);
